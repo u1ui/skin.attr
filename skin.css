@@ -1,0 +1,47 @@
+html, [u1-skin] { /* calculations also on [u1-skin]? */
+    --hsl-h: 188.9;
+    --hsl-s: 55.1%;
+    --hsl-l: 38.4%;
+    --hs:var(--hsl-h), var(--hsl-s);
+    --hsl:var(--hs), var(--hsl-l);
+
+    --color:       hsl(var(--hsl));
+    --color-light: hsl(var(--hs), calc(var(--hsl-l) + (100% - var(--hsl-l)) * .9 ) );
+    --color-dark:  hsl(var(--hs), calc(var(--hsl-l) * .7 ) );
+
+    /* named */
+    --color-bg:   hsl(var(--hs), 99.5%);
+    --color-text: hsl(var(--hs), calc(var(--hsl-l) * .4 ) );
+    --color-area: var(--color-light);
+    --color-line: hsl(var(--hs), 10%, .4);
+
+}
+html { /* calculations also on [u1-skin]? */
+    --color-init: var(--color);
+    --color-init-light: var(--color-light);
+    --color-init-dark: var(--color-dark);
+
+    --color-init-bg: var(--color-bg);
+    --color-init-text: var(--color-text);
+}
+
+html, [u1-skin] {
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+[u1-skin="invert"] {
+    --color-light: var(--color-init-dark);
+    --color-dark: var(--color-init-light);
+
+    --color-bg: var(--color-init-text);
+    --color-text: var(--color-init-bg);
+    --color-area: var(--color-light);
+    --color-line: hsl(var(--hs), 90%, .4);
+}
+[u1-skin="theme"] {
+    /*--hsl: 0, 0%, 100%;*/
+    --color: var(--color-init-text);
+    --color-bg: var(--color-init);
+    --color-text: var(--color-init-bg);
+}
