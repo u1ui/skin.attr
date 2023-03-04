@@ -1,5 +1,5 @@
 # [u1-skin] - attribute
-undefined
+Change colors of a widget
 
 ## Ussage
 
