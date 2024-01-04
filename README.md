@@ -19,7 +19,7 @@ Change colors of a widget (beta)
 ## Install
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/u1ui/skin.attr@x.x.x/skin.min.js" type=module>
+<script src="https://cdn.jsdelivr.net/gh/u1ui/skin.attr@x.x.x/skin.min.js" type=module></script>
 ```
 
 ## Demos
