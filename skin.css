@@ -45,3 +45,9 @@ html, [u1-skin] {
     --color-bg: var(--color-init);
     --color-text: var(--color-init-bg);
 }
+
+
+/*
+contrast text color by background lightness *
+https://jsfiddle.net/gqm0wvcn/4/
+*/

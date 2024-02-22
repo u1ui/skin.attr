@@ -1,7 +1,7 @@
 # [u1-skin] - attribute
 Change colors of a widget (beta)
 
-## Ussage
+## Usage
 
 ```html
 <h3>Normal H3</h3>
